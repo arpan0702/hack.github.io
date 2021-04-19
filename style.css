@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 36px;
+}
+
+.row {
+  height: 100vh;
+  width: 100%;
+}
+.nav {
+  height: 100%;
+  width: 16%;
+  font-size: 24px;
+  background-color: #1e5f74;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-item {
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+  padding: 10%;
+  color: white;
+}
+.content {
+  height: 100%;
+  width: 84%;
+  font-size: 16px;
+  background-color: #e5e5e5;
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-right: 4%;
+}
+
+.nav,
+.content {
+  float: left;
+}
+
+.myself {
+  background-color: white;
+  height: 60%;
+  padding: 2%;
+}
+.myself p {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.meetings,
+.searchMeet {
+  background-color: white;
+}
+th,
+tr,
+td {
+  text-align: left;
+}
+th {
+  padding-bottom: 3%;
+}
+.searchMeet {
+  height: 15%;
+  margin-bottom: 4%;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+#meetingTable {
+  width: 100%;
+  padding: 2%;
+  height: 80%;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: white;
+  width: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}

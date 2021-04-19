@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>My Meetings</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="row">
+        <div class="nav">
+            <div class="nav-item" style="padding-bottom: 26%;padding-top: 16%;">
+                <img src="img/menu.svg">
+                <div style="width:100%;text-align: center;">1805557</div>
+            </div>
+            <div class="nav-item" style="background-color: #133b5c;">
+                <img src="img/home.svg">
+                Home
+            </div>
+            <a href="about.html">
+                <div class="nav-item">
+                    <img src="img/about.svg">
+                    About Me
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <h1>My Meetings</h1>
+            <section class="searchMeet">
+                <img onclick="searchBetween()" style="padding-left: 5%;" src="img/search.svg">
+                <input type="text" id="meetName" onkeyup="mySearch()" placeholder="Search">
+                <div style="display:inline; padding-left: 5%;">
+                    From:
+                </div>
+                <input type="date" id="from">
+                <div style="display: inline; padding-left: 5%;">
+                    To:
+                </div>
+                <input type="date" id="to">
+            </section>
+            <section class="meetings">
+
+              
+                <table id="meetingTable">
+                    <tr style="color:#1E5F74; padding-bottom:3%; padding-top: 3%;">
+                      <th>Sl. no.</th>
+                      <th>Meeting Name</th>
+                      <th>Number of people attending</th>
+                      <th>Date</th>
+                      <th>Start-Time</th>
+                      <th>End-Time</th>
+                      <th>Actions</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>John's Meeting</td>
+                      <td>5</td>
+                      <td>20/08/2021</td>
+                      <td>9:00 AM</td>
+                      <td>11:00 AM</td>
+                      <td><img onclick="deleteRow(this);" src="img/remove.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Arpan's Meeting</td>
+                        <td>5</td>
+                        <td>20/08/2021</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 AM</td>
+                        <td><img onclick="deleteRow(this);" src="img/remove.svg"></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Kabir's Meeting</td>
+                        <td>5</td>
+                        <td>20/08/2021</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 AM</td>
+                        <td><img onclick="deleteRow(this);" src="img/remove.svg"></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Unnat's Meeting</td>
+                        <td>5</td>
+                        <td>20/08/2021</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 AM</td>
+                        <td><img onclick="deleteRow(this);" src="img/remove.svg"></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Bunny's Meeting</td>
+                        <td>5</td>
+                        <td>20/08/2021</td>
+                        <td>9:00 AM</td>
+                        <td>11:00 AM</td>
+                        <td onclick="deleteRow(this)"><img src="img/remove.svg"></td>
+                      </tr>
+                  </table> 
+                
+                  <form style="padding-left: 7%;">
+                    <input type="text" class="no-outline" name="name" placeholder="" id="name" required/>
+                    <input type="text" style="margin-left: 6%;" name="people" class="no-outline" placeholder="" id="people" required/>
+                    <input type="text" style="margin-left:18%" name="date" class="no-outline" placeholder="" id="date" required/>
+                    <input type="text" style="width: 7%;" name="start" class="no-outline" placeholder="" id="start" required/>
+                    <input type="text" style="width: 7%;margin-left: 3%;margin-right: 3% ;" name="end" class="no-outline" placeholder="" id="end" required/>
+                    <button  style="background-color: #1E5F74; color: white; padding:1%;padding-left: 1.5%;padding-right: 1.5%; border-radius: 25%;" onclick="addRow()">Add</button>
+                  </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html> 
+
